@@ -11,7 +11,7 @@ class LoadStreamlitUI:
     def load_streamlit_ui(self):
         st.set_page_config(page_title="🥷 " + self.config.get_page_title(), layout="wide")
 
-        # Ninja-Themed Dark Neon CSS + Readable Chat Fix
+        # Ninja-Themed Dark Neon CSS + Readable Sidebar + Chat Area Fix
         st.markdown("""
             <style>
             body {
@@ -31,9 +31,10 @@ class LoadStreamlitUI:
                 color: #e6e6e6;
             }
             .sidebar .sidebar-content {
-                background: linear-gradient(to bottom, #111, #1e1e1e);
-                color: #f2f2f2;
+                background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+                color: #ffffff !important;
                 border-right: 1px solid #00ffcc55;
+                box-shadow: inset 0 0 10px #00ffcc33;
             }
             h1, h2, h3, h4, h5, h6 {
                 color: #00ffcc;
